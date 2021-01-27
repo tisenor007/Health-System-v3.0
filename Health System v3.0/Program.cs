@@ -16,6 +16,23 @@ namespace Health_System_v3._0
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Health System v3.0.....");
+            Console.WriteLine();
+
+            Player player = new Player();
+            Enemy enemy = new Enemy();
+
+            player.ShowStats();
+            Console.WriteLine();
+            enemy.ShowStats();
+
+            enemy.TakeDamage(220);
+            Console.WriteLine();
+            enemy.ShowStats();
+            enemy.Reset();
+            enemy.ShowStats();
+
+            Console.ReadKey(true);
         }
     }
 }

@@ -1,0 +1,7 @@
+E:\Visual studio\Health System v3.0\Health System v3.0\bin\Debug\Health System v3.0.exe.config
+E:\Visual studio\Health System v3.0\Health System v3.0\bin\Debug\Health System v3.0.exe
+E:\Visual studio\Health System v3.0\Health System v3.0\bin\Debug\Health System v3.0.pdb
+E:\Visual studio\Health System v3.0\Health System v3.0\obj\Debug\Health System v3.0.csprojAssemblyReference.cache
+E:\Visual studio\Health System v3.0\Health System v3.0\obj\Debug\Health System v3.0.csproj.CoreCompileInputs.cache
+E:\Visual studio\Health System v3.0\Health System v3.0\obj\Debug\Health System v3.0.exe
+E:\Visual studio\Health System v3.0\Health System v3.0\obj\Debug\Health System v3.0.pdb
