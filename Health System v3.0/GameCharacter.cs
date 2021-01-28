@@ -24,8 +24,15 @@ namespace Health_System_v3._0
         }
         public void TakeDamage(int Damage)
         {
+            if (Damage <= -1)
+            {
+                //error checking
+                Console.WriteLine("TakeDamage command does not accept negative values.");
+                Damage = 0;
+            }
             Console.WriteLine(name + " is about to take " + Damage + " damage");
             Console.WriteLine();
+            //spill over effect
             int remainingDamage = Damage - shield;
             shield = shield - Damage;
 
@@ -34,6 +41,7 @@ namespace Health_System_v3._0
                 
                 Console.WriteLine(name + "'s shield has broke!");
                 Console.WriteLine();
+                //when shield is broken damage takes away from health
                 shield = 0;
                 health = health - remainingDamage;
 
@@ -51,37 +59,48 @@ namespace Health_System_v3._0
                 health = 100;
                 shield = 100;
             }
-            if (lives <= 0){
-                lives = 0;
-                health = 0;
-                shield = 0;
-                Console.WriteLine("Game Over!");
-                Console.WriteLine();
-            }
+           
+            
+
 
         }
         public void Heal( int hp )
         {
+            if (hp <= -1)
+            {
+                //error checking
+                Console.WriteLine("Heal command does not accept negative values");
+                hp = 0;
+            }
             health = health + hp;
             Console.WriteLine(name + " is about to heal " + hp + " health points.");
             Console.WriteLine();
             if (health >= 100)
             {
+                //health is capped at 100
                 health = 100;
             }
         }
         public void RegenShield(int sp)
         {
+            if (sp <= -1)
+            {
+                //error checking
+                Console.WriteLine("RegenShield command does not accept negative values");
+                sp = 0;
+            }
             shield = shield + sp;
             Console.WriteLine(name + " is about regenerate " + sp + " shield.");
             Console.WriteLine();
             if (shield >= 100)
             {
+                //shield is capped at 100
                 shield = 100;
             }
 
 
         }
+        //reset function
         public void Reset()
         {
             Console.WriteLine(name + "'s stats have reset!");
