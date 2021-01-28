@@ -28,6 +28,20 @@ namespace Health_System_v3._0
                 Console.WriteLine();
             }
         }
+        public void extralife()
+        {
+          
+            Console.WriteLine(name + " has just picked up an extra life");
+            Console.WriteLine();
+            lives = lives + 1;
+            if (lives >= 3)
+            {
+                //caps lives at 3
+                //also there is no extra life method for 
+                lives = 3;
+            }
+
+        }
         public new void ShowStats()
         {
             //lets you know who is who

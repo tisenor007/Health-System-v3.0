@@ -47,6 +47,8 @@ namespace Health_System_v3._0
             enemy.name = Enemyname;
 
             //Gameplay
+            player.Reset();
+            enemy.Reset();
             player.ShowStats();
             enemy.ShowStats();
             enemy.TakeDamage(50);
@@ -54,6 +56,7 @@ namespace Health_System_v3._0
             player.TakeDamage(225);
             player.ShowStats();
             player.TakeDamage(175);
+            player.extralife();
             player.ShowStats();
             player.Heal(50);
             player.ShowStats();
@@ -69,6 +72,7 @@ namespace Health_System_v3._0
             enemy.ShowStats();
             player.TakeDamage(230);
             player.ShowStats();
+            //shows that nothing accepts negative values
             player.Reset();
             enemy.Reset();
             player.ShowStats();
@@ -78,7 +82,15 @@ namespace Health_System_v3._0
             player.RegenShield(-30);
             player.ShowStats();
             enemy.ShowStats();
-          
+            //showing neither health or shield goes above 100
+            player.Reset();
+            enemy.Reset();
+            player.ShowStats();
+            enemy.ShowStats();
+            player.Heal(100);
+            enemy.RegenShield(100);
+            player.ShowStats();
+            enemy.ShowStats();
 
 
             Console.ReadKey(true);

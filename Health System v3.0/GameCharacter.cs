@@ -8,6 +8,7 @@ namespace Health_System_v3._0
 {
     class GameCharacter
     {
+        //fields
         public string name;
         public int health;
         public int shield;
