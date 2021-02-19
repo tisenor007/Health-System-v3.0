@@ -5,3 +5,10 @@ E:\Visual studio\Health System v3.0\Health System v3.0\obj\Debug\Health System v
 E:\Visual studio\Health System v3.0\Health System v3.0\obj\Debug\Health System v3.0.csproj.CoreCompileInputs.cache
 E:\Visual studio\Health System v3.0\Health System v3.0\obj\Debug\Health System v3.0.exe
 E:\Visual studio\Health System v3.0\Health System v3.0\obj\Debug\Health System v3.0.pdb
+D:\Visual studio\Health System v3.0\Health System v3.0\bin\Debug\Health System v3.0.exe.config
+D:\Visual studio\Health System v3.0\Health System v3.0\bin\Debug\Health System v3.0.exe
+D:\Visual studio\Health System v3.0\Health System v3.0\bin\Debug\Health System v3.0.pdb
+D:\Visual studio\Health System v3.0\Health System v3.0\obj\Debug\Health System v3.0.csprojAssemblyReference.cache
+D:\Visual studio\Health System v3.0\Health System v3.0\obj\Debug\Health System v3.0.csproj.CoreCompileInputs.cache
+D:\Visual studio\Health System v3.0\Health System v3.0\obj\Debug\Health System v3.0.exe
+D:\Visual studio\Health System v3.0\Health System v3.0\obj\Debug\Health System v3.0.pdb

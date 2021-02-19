@@ -18,20 +18,20 @@ namespace Health_System_v3._0
         
         static void Main(string[] args)
         {
-            string Playername;
-            string Enemyname;
+            string playerName;
+            string enemyName;
 
             //into
             Console.WriteLine("Welcome to the Health System v3.0.....");
             Console.WriteLine();
             //small mechanic in the beginning that lets the player choose names for player and enmey in game....
             Console.WriteLine("What would you like your name to be?");
-            Playername = Console.ReadLine();
+            playerName = Console.ReadLine();
             Console.WriteLine();
             Console.WriteLine("Player's name set!");
             Console.WriteLine();
             Console.WriteLine("What would you like your Enemies name to be");
-            Enemyname = Console.ReadLine();
+            enemyName = Console.ReadLine();
             Console.WriteLine();
             Console.WriteLine("Enemy's name has been set!");
             Console.WriteLine();
@@ -39,12 +39,12 @@ namespace Health_System_v3._0
             Console.WriteLine();
 
             
-            Player player = new Player();//instantiation and declaration
-            Enemy enemy = new Enemy();//instantiation and declaration
+            Player player = new Player(playerName);//instantiation and declaration
+            Enemy enemy = new Enemy(enemyName);//instantiation and declaration
 
             //sets names
-            player.name = Playername;
-            enemy.name = Enemyname;
+            //player.name = playerName;
+            //enemy.name = enemyName;
 
             //Gameplay
             player.Reset();

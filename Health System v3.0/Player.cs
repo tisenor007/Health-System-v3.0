@@ -8,9 +8,11 @@ namespace Health_System_v3._0
 {
     class Player : GameCharacter
     {
-        public Player()
+        //constructor
+        public Player(string playerName)
         {
             //name = "Luke Skywalker";
+            name = playerName;
             health = 100;
             shield = 100;
             lives = 3;

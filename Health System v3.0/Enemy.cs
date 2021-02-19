@@ -8,9 +8,10 @@ namespace Health_System_v3._0
 {
     class Enemy : GameCharacter
     {
-        public Enemy()
+        public Enemy(string enemyName)
         {
             //name = "Darth Vader";
+            name = enemyName;
             health = 100;
             shield = 100;
             //no enemy has more than 1 life, that would be unfair to player....
