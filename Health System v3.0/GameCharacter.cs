@@ -10,9 +10,9 @@ namespace Health_System_v3._0
     {
         //fields
         public string name;
-        public int health;
-        public int shield;
-        public int lives;
+        protected int health;
+        protected int shield;
+        protected int lives;
 
         public void ShowStats()
         {

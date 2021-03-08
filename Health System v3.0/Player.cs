@@ -3,19 +3,31 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace Health_System_v3._0
 {
     class Player : GameCharacter
     {
         //constructor
-        public Player(string playerName)
+        public Player()//string playerName)
         {
-            //name = "Luke Skywalker";
-            name = playerName;
+            name = "Luke Skywalker";
+            //name = playerName;
             health = 100;
             shield = 100;
             lives = 3;
+        }
+        public bool UnitTest()
+        {
+            Reset();
+            ShowStats();
+            TakeDamage(225);
+            Debug.Assert(shield == 100);
+            Debug.Assert(health == 100);
+            Debug.Assert(lives == 2);
+            ShowStats();
+            return UnitTest();
         }
         public new void TakeDamage(int Damage)
         {
